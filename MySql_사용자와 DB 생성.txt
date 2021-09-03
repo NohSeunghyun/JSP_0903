@@ -1,0 +1,15 @@
+시작→실행→cmd
+>mysql -u root -p
+>비밀번호 1234
+------------------------------------------------------------------------------------ 
+(8버전이전)
+>grant all privileges on *.* to 'java'@'%' identified by 'java' with grant option;
+------------------------------------------------------------------------------------
+-에러 발생하면 8버전이기 때문. 8버전부터 조금 바뀜.
+>create user java@localhost identified by 'java';
+>grant all privileges on *.* to java@localhost with grant option;
+
+>create database testdb;
+>show databases;
+
+>EXIT
